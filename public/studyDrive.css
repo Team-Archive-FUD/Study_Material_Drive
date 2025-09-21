@@ -4,15 +4,18 @@
   gap: 1rem;
 }
 
+
+.material-card h3 {
+  margin: 0.2rem 0;
+}
+
 .material-card {
   background: #ecf0f1;
   padding: 1rem;
   border-radius: 6px;
 }
 
-.material-card h3 {
-  margin: 0.2rem 0;
-}
+
 
 .material-card a {
   color: #2980b9;
