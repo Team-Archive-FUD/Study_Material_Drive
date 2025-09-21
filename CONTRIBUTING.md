@@ -53,12 +53,30 @@ This is an open-source project developed as part of **CSE404 Open Source Softwar
 
 ```
 study-material-drive/
-├── src/              # Source code
-├── public/           # Static files (HTML, CSS, JS)
-├── docs/             # Documentation
-├── LICENSE           # License file (MPL 2.0)
-├── README.md         # Project overview
-└── CONTRIBUTING.md   # Contribution guidelines
+├── public/
+│   ├── index.html          # Landing page (Musa Yusuf Galambi)
+│   ├── style.css           # Landing page styling
+│   ├── signUp.html         # Sign-up page (Muhammad Saidu Hassan)
+│   ├── signUp.css          # Sign-up page styling
+│   ├── login.html          # Login page (Kadijah Ibrahim)
+│   ├── login.css           # Login page styling
+│   ├── studyDrive.html     # File upload & materials display page (Adam Abubakar Adam, Ahmad Muhammad Auwal, Omokayode Abdulqudus Abdulrahman)
+│   ├── studyDrive.css      # Styling for file upload, display, and search
+│   └── assets/             # Images, icons, static files
+│
+├── src/
+│   └── script.js           # JavaScript logic (auth, file upload, materials display, search)
+│
+├── docs/                   # Documentation
+│   ├── proposal.md
+│   └── report.md
+│
+├── tests/                  # Unit and integration tests
+│
+├── LICENSE                 # MPL 2.0 + Third-Party MIT notice
+├── README.md               # Project overview
+└── CONTRIBUTING.md          # Contribution guidelines
+
 ```
 
 ---

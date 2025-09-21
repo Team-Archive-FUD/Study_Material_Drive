@@ -109,16 +109,14 @@ study-material-drive/
 │
 ├── docs/                   # Documentation
 │   ├── proposal.md
-│   ├── report.md
-│   └── architecture.md
+│   └── report.md
 │
 ├── tests/                  # Unit and integration tests
 │
-├── .env.example            # Example environment variables
 ├── LICENSE                 # MPL 2.0 + Third-Party MIT notice
 ├── README.md               # Project overview
-├── CONTRIBUTING.md          # Contribution guidelines
-└── package.json            # Dependencies (if using Node.js)
+└── CONTRIBUTING.md          # Contribution guidelines
+
 ```
 
 ---
@@ -158,5 +156,5 @@ This project was developed by:
 ## 🙏 Acknowledgments
 
 - [Supabase](https://supabase.com) for the open-source database and authentication services.
-- Federal University Gombe – CSE404 Open Source Software Development course.
+- Federal University Dutse – CSE404 Open Source Software Development course.
 - The open-source community for inspiration and contributions.
