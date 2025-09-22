@@ -94,18 +94,19 @@ You can also use GitHub Issues to suggest features, report bugs, or discuss impr
 ```
 study-material-drive/
 ├── public/
-│   ├── index.html          # Landing page (Musa Yusuf Galambi)
-│   ├── style.css           # Landing page styling
-│   ├── signUp.html         # Sign-up page (Muhammad Saidu Hassan)
-│   ├── signUp.css          # Sign-up page styling
-│   ├── login.html          # Login page (Kadijah Ibrahim)
-│   ├── login.css           # Login page styling
-│   ├── studyDrive.html     # File upload & materials display page (Adam Abubakar Adam, Ahmad Muhammad Auwal, Omokayode Abdulqudus Abdulrahman)
-│   ├── studyDrive.css      # Styling for file upload, display, and search
-│   └── assets/             # Images, icons, static files
+├── index.html          # Landing page (Musa Yusuf Galambi)
+├── style.css           # Landing page styling
+├── signUp.html         # Sign-up page (Muhammad Saidu Hassan)
+├── signUp.css          # Sign-up page styling
+├── login.html          # Login page (Kadijah Ibrahim)
+├── login.css           # Login page styling
+├── script.js           # JavaScript logic (auth, file upload, materials display, search)
+├── studyDrive.html     # File upload & materials display page (Adam Abubakar Adam, Ahmad Muhammad Auwal, Omokayode Abdulqudus Abdulrahman)
+├── studyDrive.css      # Styling for file upload, display, and search
+├── assets/             # Images, icons, static files
 │
 ├── src/
-│   └── script.js           # JavaScript logic (auth, file upload, materials display, search)
+│   
 │
 ├── docs/                   # Documentation
 │   ├── proposal.md
