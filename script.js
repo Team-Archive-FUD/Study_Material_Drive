@@ -155,3 +155,32 @@ async function loadMaterials() {
 if (document.getElementById("materialsList")) {
   loadMaterials();
 }
+
+// ----------------- SEARCH FUNCTION -----------------
+const searchBar = document.getElementById("searchBar");
+if (searchBar) {
+  searchBar.addEventListener("input", async (e) => {
+    const query = e.target.value.toLowerCase();
+
+    const { data, error } = await client
+      .from("materials")
+      .select("*")
+      .ilike("title", `%${query}%`);
+
+    if (!error) {
+      const list = document.getElementById("materialsList");
+      list.innerHTML = "";
+
+      data.forEach((item) => {
+        const card = document.createElement("div");
+        card.classList.add("material-card");
+        card.innerHTML = `
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+          <a href="${item.file_url}" target="_blank">Download</a>
+        `;
+        list.appendChild(card);
+      });
+    }
+  });
+}
