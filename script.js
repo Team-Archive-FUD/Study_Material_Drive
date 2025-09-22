@@ -96,3 +96,4 @@ async function loadMaterials() {
 if (document.getElementById("materialsList")) {
   loadMaterials();
 }
+
