@@ -1,3 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f6fa;
+}
+.navbar {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.upload-section,
+.search-section,
+.materials-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.search-section {
+  border-radius: 48px;
+}
+.upload-section {
+  float: left;
+  width: 25%;
+  border-radius: 28px;
+}
+.upload-section h2,
+.materials-section h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+.materials-section {
+  float: right;
+  width: 65%;
+  border-radius: 28px;
+}
+form input,
+form textarea,
+form button {
+  width: 92%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+form button {
+  background: #e67e22;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+form button:hover {
+  background: #a56f40ff;
+}
+
 .materials-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

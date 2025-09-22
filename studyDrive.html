@@ -8,9 +8,16 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
+  <nav class="navbar">
+    <h1>📚 Study Material Drive</h1>
+    <button onclick="logout()">Log Out</button>
+  </nav>
+
+  <main class="container">
   <!-- Upload Section -->
    <section class="upload-section">
     <h2>Upload Study Material</h2>
+    
     <form id="uploadForm">
       <input type="text" id="title" placeholder="Material Title" required/>
       <textarea id="description" placeholder="Description" required></textarea>

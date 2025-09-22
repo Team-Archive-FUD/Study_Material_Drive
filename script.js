@@ -142,4 +142,4 @@ if (uploadForm) {
       loadMaterials(); // refresh list
     }
   });
-}("Code the JavaScript to handle the file upload process, storing files in Supabase Stroge")
+}
