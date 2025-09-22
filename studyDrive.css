@@ -93,3 +93,12 @@ form button:hover {
 .search-section {
   border-radius: 48px;
 }
+
+@media (max-width: 768px) {
+  .materials-section,
+  .upload-section {
+    float: clrear;
+    width: 90%;
+    border-radius: 28px;
+  }
+}
