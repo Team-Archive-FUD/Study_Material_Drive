@@ -84,3 +84,12 @@ form button:hover {
   color: #2980b9;
   text-decoration: none;
 }
+.search-section input {
+  width: 97%;
+  padding: 0.8rem;
+  border-radius: 24px;
+  border: 1px solid #ccc;
+}
+.search-section {
+  border-radius: 48px;
+}
