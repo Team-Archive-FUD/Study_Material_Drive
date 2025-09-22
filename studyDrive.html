@@ -8,6 +8,19 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
+  <!-- Upload Section -->
+   <section class="upload-section">
+    <h2>Upload Study Material</h2>
+    <form id="uploadForm">
+      <input type="text" id="title" placeholder="Material Title" required/>
+      <textarea id="description" placeholder="Description" required></textarea>
+      <input type="file" id="fillInput" accept=".pdf,.doc,.docx,.ppt,.txt" required/>
+      <button type="submit">Upload</button>
+
+    </form>
+   </section>
+
+
 <!-- Display Section -->
     <section class="materials-section">
       <h2>Available Materials</h2>
@@ -16,6 +29,7 @@
       </div>
     </section>
   </main>
+  
 
      <script src="script.js"></script>
 </body>

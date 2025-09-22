@@ -97,3 +97,49 @@ if (document.getElementById("materialsList")) {
   loadMaterials();
 }
 
+
+
+// ----------------- FILE UPLOAD -----------------
+const uploadForm = document.getElementById("uploadForm");
+if (uploadForm) {
+  uploadForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const title = document.getElementById("title").value;
+    const description = document.getElementById("description").value;
+    const file = document.getElementById("fileInput").files[0];
+
+    if (!file) {
+      alert("Please select a file to upload.");
+      return;
+    }
+
+    // Upload file to Supabase Storage
+    const filePath = `${Date.now()}-${file.name}`;
+    const { data: fileData, error: fileError } = await client.storage
+      .from("study-files")
+      .upload(filePath, file);
+
+    if (fileError) {
+      alert("Upload failed: " + fileError.message);
+      return;
+    }
+
+    const fileUrl = `${SUPABASE_URL}/storage/v1/object/public/study-files/${filePath}`;
+
+    // Insert metadata into DB
+    const { data, error } = await client
+      .from("materials")
+      .insert([
+        { title, description, file_url: fileUrl, uploaded_by: "student" },
+      ]);
+
+    if (error) {
+      alert("Database error: " + error.message);
+    } else {
+      alert("File uploaded successfully!");
+      uploadForm.reset();
+      loadMaterials(); // refresh list
+    }
+  });
+}("Code the JavaScript to handle the file upload process, storing files in Supabase Stroge")
