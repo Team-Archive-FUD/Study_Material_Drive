@@ -2,6 +2,7 @@
 
 An open-source, collaborative, and centralized web platform for university departments where students can upload, share, and access study materials freely.  
 The goal is to create a **student-driven knowledge hub** that makes learning resources more accessible, organized, and reusable.
+[Visit site](https://team-archive-fud.github.io/Study_Material_Drive/)
 
 ---
 
@@ -106,7 +107,7 @@ study-material-drive/
 ├── assets/             # Images, icons, static files
 │
 ├── src/
-│   
+│
 │
 ├── docs/                   # Documentation
 │   ├── proposal.md
